@@ -1,0 +1,75 @@
+h1 {
+	font-family: Arial;
+	text-align: center;
+	font-size: 4em;
+}
+#ball {
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+	background: #000000; 
+  	background: -webkit-radial-gradient(bottom left, #000000, #111111, #333333); 
+  	background: -o-radial-gradient(bottom left, #000000, #111111, #333333); 
+ 	background: -moz-radial-gradient(bottom left, #000000, #111111, #333333); 
+ 	background: radial-gradient(at bottom left, #000000, #111111, #333333); 
+	margin: 0 auto;
+	text-align: center;
+}
+#circle {
+	border-radius: 50%;
+	border: 4px solid #555555;
+	width: 250px;
+	height: 250px;
+	background: #000000;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	vertical-align: middle;
+}
+#answer {
+	width: 0; 
+	height: 0; 
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 130px solid #000088;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	vertical-align: middle;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 1.5s ease-in-out;
+  	-moz-transition: opacity 1.5s ease-in-out;
+  	-o-transition: opacity 1.5s ease-in-out;
+  	transition: opacity 1.5s ease-in-out;
+}
+#answer.active {
+	opacity: 1;
+	-webkit-transition: opacity 1.5s ease-in-out;
+  	-moz-transition: opacity 1.5s ease-in-out;
+  	-o-transition: opacity 1.5s ease-in-out;
+  	transition: opacity 1.5s ease-in-out;	
+}
+#p {
+	font-family: Arial;
+    text-align: center;
+    top: -120px;
+    left: -47px;
+    position: relative;
+    width: 93px;
+    height: 93px;
+    margin: 0px;
+}
+#ask {
+	margin: 0 auto;
+	width: 100px;
+	padding-top: 25px;
+}
+#replay {
+	visibility: hidden;
+	margin: 0 auto;
+	width: 100px;
+}
